@@ -1,0 +1,147 @@
+@font-face {
+    font-family: neu;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+@font-face {
+    font-family: thin;
+    src: url(./NeueHaasDisplayThin.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'neu';
+    
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+    
+}
+
+#page1{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 2vw;
+    background-color: #EFE9E3;
+    position: relative;
+    
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    padding: 2vw 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+nav .nav-left{
+    position: relative;
+}
+nav .nav-left a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;    
+}
+
+#omprakash{
+    font-size: 1.9em;
+    font-family: thin;
+}
+#artist{
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: .1rem;
+}
+
+#orangecircle{
+    position: absolute;
+    top: 33px;
+    right: 48px;
+    width: 50px;
+    height: 50px;
+    background-color: #fe330aa4;
+    border-radius: 50px;
+}
+
+nav .nav-right ul{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    list-style: none;
+    
+    
+}
+nav .nav-right ul li a{
+    z-index: 9;
+    position: relative;
+    text-decoration: none; 
+    color: rgba(0, 0, 0, 0.765);
+}
+
+nav .nav-right ul li {
+    position: relative;
+    padding: 10px 20px ;
+    border: 1px solid rgb(134, 134, 134);
+    border-radius: 50px;
+    transition: all ease 0.3s;
+    overflow: hidden;
+}
+
+nav .nav-right ul li::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+}
+
+nav .nav-right ul li:hover::after{
+    bottom: 0;
+    border-radius: 0;
+    
+}
+
+nav .nav-right ul li a:hover{
+    color: white;
+}
+
+#center{
+    
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+    padding-bottom: 2.5vw;
+}
+
+#center-left h3{
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+}
+
+#center-right h1{
+    font-size: 10vw;
+    text-align: right;
+    line-height: 8vw;
+}
+
+#page1 video{
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 5vw;
+}
