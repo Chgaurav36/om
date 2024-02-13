@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery-Omprakash Artist</title>
+    <link rel="stylesheet" href="/pages/gallery.css">
+</head>
+<body>
+    <div class="gallery-main"></div>
+    <div class="gallery">
+        <div id="top">
+            <h1 id="h1">Gallery</h1>
+        </div>
+        <div id="center">
+            <div id="content">
+                <h1 style="color: white;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim repellat corrupti in, aliquam magni accusantium odit hic? Expedita reprehenderit iusto error et perspiciatis laborum officia nisi eum odio, quae quasi!</h1>
+            </div>
+
+        </div>
+        <div id="bottom">
+            <h1 id="h1">Gallery</h1>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script >
+    let tl  = gsap.timeline({
+    scrollTrigger:{
+        trigger: '.gallery',  
+        
+        start: "50% 50%",
+        end: "100% 50%",
+        pin: true,      
+        markers: true,
+        scrub:2,
+   
+   
+}});
+
+tl
+.to("#top",{
+    top: "-50%"
+},"a")
+.to("#bottom",{
+    bottom: "-50%"
+},"a")
+.to("#top #h1",{
+    bottom: "-60%"
+},"a")
+.to("#bottom #h1",{
+    top: "-60%"
+},"a")
+.to("#content",{
+    marginTop: "0%"
+},"a")
+
+</script>
+
+
+
+</body>
+</html>
