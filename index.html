@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
     <title>Omprakash Artist</title>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="smooth-scroll">
     <div id="main">
         <div id="page1">
             <nav>
@@ -22,7 +22,7 @@
                 </div>
                 <div class="nav-right">
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="/index.html">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="/pages/gallery.html">Gallery</a></li>
                         <li><a href="#">Services</a></li>
@@ -52,16 +52,66 @@
             </div>
         </div>
         <div id="page2">
-            <div id="page2-about">
-                
-            </div>
+            <div id="featured">
+                <div class="fheading">
+                        <h1>new</h1>
+                        <h1>works</h1>
+                    </div>
+                    <div id="f-images">
+                        <div id="f-left">
+
+                            <div class="f-left-elem">
+                                <h3>Omprakash <br> Artist</h3>
+                                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1><br><br>
+                                <h4>Contact Now !</h4>
+                            </div>
+                            <div class="f-left-elem">
+                                <h3>Peppermint Mocha</h3>
+                                <h1>Espresso, steamed milk, mocha sauce and peppermint-flavored syrup.</h1><br><br>
+                                <h4>Order Now !</h4>
+                            </div>
+                            <div class="f-left-elem">
+                                <h3>Peppermint Mocha</h3>
+                                <h1>Espresso, steamed milk, mocha sauce and peppermint-flavored syrup.</h1><br><br>
+                                <h4>Order Now !</h4>
+                            </div>
+                            <div class="f-left-elem last ">
+                                <h3>Peppermint Mocha</h3>
+                                <h1>Espresso, steamed milk, mocha sauce and peppermint-flavored syrup.</h1><br><br>
+                                <h4>Order Now !</h4>
+                            </div>
+                            
+                        </div>
+                        <div id="f-right">
+                            <div class="images">
+                                <img src="/fright1.jpg" alt="">
+                                <img src="/fright2.jpg" alt="">
+                                <img src="/fright3.jpg" alt="">
+                                <img src="/fright4.jpg" alt="">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div id="btn">
+                        <button id="gallery-page" class="magnet">View Gallery</button>
+                    </div>
+                   
+                </div>
+            
         </div>
     </div>
 
 
 
-<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-<!-- <script src="script.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"
+    integrity="sha512-auFmPm+de880vk/c+bgBmuOnQ7BM28z7zPWmepVgX8737t75OHZjElOnQqERwP8cE4DIyCJ+gb1kE0b/eLWcnA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+<script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+<script src="script.js"></script>
 </body>
 </html>

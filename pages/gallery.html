@@ -7,7 +7,26 @@
     <link rel="stylesheet" href="/pages/gallery.css">
 </head>
 <body>
-    <div class="gallery-main"></div>
+    <div class="gallery-main">
+        <nav>
+            <div class="nav-left">
+                <a href="/">
+                    <h4 id="omprakash" style="color: #fe330a;">Omprakash</h4>
+                    <h1 id="artist">Artist</h1>
+                </a>
+                <div id="orangecircle"></div>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="/pages/gallery.html">Gallery</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>                        
+                </ul>
+            </div>
+        </nav>
+    </div>
     <div class="gallery">
         <div id="top">
             <h1 id="h1">Gallery</h1>
@@ -45,6 +64,7 @@ tl
 .to("#bottom",{
     bottom: "-50%"
 },"a")
+
 .to("#top #h1",{
     bottom: "-60%"
 },"a")
@@ -53,6 +73,9 @@ tl
 },"a")
 .to("#content",{
     marginTop: "0%"
+},"a")
+.to("#bottom",{
+    display: "none"
 },"a")
 
 </script>

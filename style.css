@@ -3,7 +3,7 @@
     src: url(./NeueHaasDisplayMediu.ttf);
 }
 @font-face {
-    font-family: thin;
+    font-family: thin1;
     src: url(./NeueHaasDisplayThin.ttf);
 }
 *{
@@ -12,13 +12,13 @@
     box-sizing: border-box;
     color: black;
     font-family: 'neu';
-    
 }
 
 html,
 body{
     width: 100%;
     height: 100%;    
+    background-color: #EFE9E3;
 }
 
 #page1{
@@ -37,8 +37,6 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-
 }
 
 nav .nav-left{
@@ -52,7 +50,7 @@ nav .nav-left a {
 
 #omprakash{
     font-size: 1.9em;
-    font-family: thin;
+    font-family: thin1;
 }
 #artist{
     font-size: 2em;
@@ -127,7 +125,9 @@ nav .nav-right ul li a:hover{
     padding-bottom: 2.5vw;
 }
 
-#center-left h3{
+
+
+#center-left  h3{
     width: 25vw;
     font-size: 1.8vw;
     line-height: 2vw;
@@ -212,16 +212,122 @@ nav .nav-right ul li a:hover{
 }
 
 #page2{
+    position: relative;
     min-height: 100vh;
     width: 100%;
-    background-color: red;
+    
 }
 
-#page2-about{
-    width: 100%;
-    min-height: 80vh;
-background-color: greenyellow;
+
+
+/* featured */
+
+#featured{
+    padding: 10vw 15vw;
+    
+    
 }
+
+.fheading>h1{
+    color: rgb(0, 0, 0);
+    font-size: 3vw;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* .fheading>h1:nth-child(2){
+    color: transparent;
+    -webkit-text-stroke: .1px rgb(0, 0, 0);
+    letter-spacing: 10px;
+    font-size: 6vw;
+    
+    
+} */
+
+#f-images{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    margin-top: 5vw;
+
+    /* border:2px solid red; */
+}
+
+#f-left{
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    width: 45%;
+    height: inherit;
+    /* border: 3px solid blue; */
+}
+
+#f-left h1{
+    font-size: 2.5vw;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 1.5vw 0;
+
+}
+
+#f-left h4{
+    font-size:3.5vw ;
+    opacity: .5;
+}
+
+#f-left h3{
+    font-size: 4vw;
+}
+
+.f-left-elem{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height:inherit;
+    }
+
+#f-right{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 45%;
+    height: inherit;
+    opacity: 1 !important;
+   
+}
+
+#f-right .images{
+    width: 90%;
+    height: 90%;
+    
+}
+
+#f-right .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn button{
+    cursor: pointer;
+    padding: 1.3vw 2.5vw;
+    border-radius: 100px;
+    border: 2px solid rgba(110, 104, 104, 0.596);
+    background-color: white;
+    font-size: 1vw;
+    font-weight: 600;
+    letter-spacing: .1vw;
+}
+
 
 
 
