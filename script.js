@@ -42,10 +42,18 @@ gsap.to(".f-left-elem", {
 
 page2();
 
-var menu = document.querySelector("nav h3")
-var full = document.querySelector("#full-scr")
-menu.addEventListener("click", () => {
+var menu = document.querySelector("nav h3");
+var full = document.querySelector("#full-scr");
+var flag = 0;
+menu.addEventListener("click", function()  {
+
+  if (flag == 0 ) {
     full.style.top = 0;
+    flag = 1;
+  }else{
+    full.style.top = "-100%";
+    flag = 0;
+  }
 });
 
 
