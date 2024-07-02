@@ -1,0 +1,74 @@
+<section class="gallery">
+                <div class="container">
+                    <div class="row">
+                        <div class="gallery-filter">
+                          <span class="filter-item active" data-filter="images">Images</span>
+                          <span class="filter-item " data-filter="videos">Videos</span>                          
+                                                    
+                        </div>
+                       </div>
+                       <div class="row">
+                        <!-- 1 Sand art image -->
+                        <div class="gallery-item image">
+                          <div class="gallery-item-inner">
+                             <img src="../fright1.jpg" alt="image">
+                          </div>
+                        </div>
+                        
+                         
+                       <!-- 1 Sand art image -->
+                        <div class="gallery-item image">
+                         <div class="gallery-item-inner">
+                            <img src="../fright4.jpg" alt="image">
+                         </div>
+                        </div>
+                                
+                       <!-- 1 Sand art image -->
+                        <div class="gallery-item  image">
+                         <div class="gallery-item-inner">
+                            <img src="../fright1.jpg" alt="image">
+                         </div>
+                        </div>
+                                
+                       <!-- 1 Sand art image -->
+                        <div class="gallery-item  image">
+                         <div class="gallery-item-inner">
+                            <img src="../fright4.jpg" alt="image">
+                         </div>
+                        </div>
+                            
+                       <!-- 1 Sand art image -->
+                        <div class="gallery-item  image">
+                          <div class="gallery-item-inner">
+                            <img src="../fright1.jpg" alt="image">
+                          </div>
+                        </div>
+                         
+                       <!-- 1 Sand art image -->
+                        <div class="gallery-item image">
+                          <div class="gallery-item-inner">
+                            <img src="../fright1.jpg" alt="image">
+                          </div>
+                        </div>
+                      <!-- 1 Sand art image -->
+                        <div class="gallery-item  image">
+                          <div class="gallery-item-inner">
+                            <img src="../fright3.jpg" alt="image">
+                          </div>
+                        </div>
+                         
+                       <!-- 1 Sand art image -->
+                        <div class="gallery-item image">
+                         <div class="gallery-item-inner">
+                            <img src="../fright4.jpg" alt="image">
+                         </div>
+                        </div>
+                        <!-- 1 Sand art image -->
+                        <div class="gallery-item videos">
+                          <div class="gallery-item-inner">
+                            <img src="../fright1.jpg" alt="i">
+                          </div>
+                        </div>
+                       </div>
+                </div>
+            </section>

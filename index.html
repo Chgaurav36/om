@@ -5,36 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
     <title>Omprakash Artist</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> 
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="smooth-scroll">
+<body>
+    <!-- <div id="sticky"></div> -->
     <div id="main">
+        <div id="full-scr"></div>
+           <div class="header"></div>
         <div id="page1">
-            <nav>
-                <div class="nav-left">
-                    <a href="/">
-                        <h4 id="omprakash" style="color: #fe330a;">Omprakash</h4>
-                        <h1 id="artist">Artist</h1>
-                    </a>
-                    <div id="orangecircle"></div>
-                </div>
-                <div class="nav-right">
-                    <ul>
-                        <li><a href="/index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="/pages/gallery.html">Gallery</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>                        
-                    </ul>
-                </div>
-            </nav>
-            <div id="orange-circle">
-                <div id="circle1"></div>
-                <div id="circle2"></div>
-                <div id="circle3"></div>
-            </div>
+                  
             
             <video loop muted autoplay src="./PXL_20231213_072822628.mp4"></video>
             
@@ -47,42 +31,39 @@
                     </h3>
                 </div>
                 <div id="center-right">
-                    <h1>ART <br> THAT <br>INSPIRE</h1>
+                    <h1>ART</h1> <br> <h1 style="color: #fe330a;">THAT</h1> <br> <h1>INSPIRE</h1>
                 </div>
             </div>
         </div>
         <div id="page2">
             <div id="featured">
-                <div class="fheading">
+                <!-- <div class="fheading">
                         <h1>new</h1>
                         <h1>works</h1>
-                    </div>
+                    </div> -->
                     <div id="f-images">
                         <div id="f-left">
 
                             <div class="f-left-elem">
-                                <h3>Omprakash <br> Artist</h3>
-                                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1><br><br>
-                                <h4>Contact Now !</h4>
+                                <h3>Sand <br> Art</h3>
+                                <h5>Sand art involves creating intricate designs and sculptures using colored sand grains, often arranged in glass containers or on specially designed tables, reflecting ephemeral beauty and a meditative process cherished by both artists and viewers worldwide.</h1><br><br>
+                                
                             </div>
                             <div class="f-left-elem">
-                                <h3>Peppermint Mocha</h3>
-                                <h1>Espresso, steamed milk, mocha sauce and peppermint-flavored syrup.</h1><br><br>
-                                <h4>Order Now !</h4>
+                                <h3>Sand <br> Art</h3>
+                                <h5>Sand art involves creating intricate designs and sculptures using colored sand grains, often arranged in glass containers or on specially designed tables, reflecting ephemeral beauty and a meditative process cherished by both artists and viewers worldwide.</h1>
                             </div>
                             <div class="f-left-elem">
-                                <h3>Peppermint Mocha</h3>
-                                <h1>Espresso, steamed milk, mocha sauce and peppermint-flavored syrup.</h1><br><br>
-                                <h4>Order Now !</h4>
+                                <h3>Sand <br> Art</h3>
+                                <h5>Sand art involves creating intricate designs and sculptures using colored sand grains, often arranged in glass containers or on specially designed tables, reflecting ephemeral beauty and a meditative process cherished by both artists and viewers worldwide.</h1>
                             </div>
                             <div class="f-left-elem last ">
-                                <h3>Peppermint Mocha</h3>
-                                <h1>Espresso, steamed milk, mocha sauce and peppermint-flavored syrup.</h1><br><br>
-                                <h4>Order Now !</h4>
+                                <h3>Sand <br> Art</h3>
+                                <h5>Sand art involves creating intricate designs and sculptures using colored sand grains, often arranged in glass containers or on specially designed tables, reflecting ephemeral beauty and a meditative process cherished by both artists and viewers worldwide.</h1>
                             </div>
                             
                         </div>
-                        <div id="f-right">
+                        <div id="f-right" >
                             <div class="images">
                                 <img src="/fright1.jpg" alt="">
                                 <img src="/fright2.jpg" alt="">
@@ -93,17 +74,25 @@
                         </div>
                     </div>
                     <div id="btn">
-                        <button id="gallery-page" class="magnet">View Gallery</button>
+                        <button id="gallery-page" class="magnet"><h1>View Gallery</h1></button>
                     </div>
                    
                 </div>
             
         </div>
+        <div class="footer"></div>
+        
+        
     </div>
+    
 
 
 
 
+    <script>
+        $('.header').load('header.html');
+        $('.footer').load('footer.html');
+    </script>
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -111,7 +100,8 @@
     integrity="sha512-auFmPm+de880vk/c+bgBmuOnQ7BM28z7zPWmepVgX8737t75OHZjElOnQqERwP8cE4DIyCJ+gb1kE0b/eLWcnA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
-<script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+<script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>

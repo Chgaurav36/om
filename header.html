@@ -1,0 +1,173 @@
+<nav>
+    <div class="nav-left">
+        <a href="/">
+            <h4 id="omprakash" style="color: #fe330a;">Omprakash</h4>
+            <h1 id="artist">Artist</h1>
+        </a>
+        <div id="navorangecircle"></div>
+    </div>
+    <div class="nav-right">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/sandArt.html">Sand Art</a></li>
+            <li><a href="/pages/speedArt.html">Speed Art</a></li>
+            <li><a href="/pages/magicArt.html">Magic Art</a></li>
+            <li><a href="/pages/sparkelArt.html">Sparkel Art</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>                        
+        </ul>
+    </div>
+    <h3>Menu</h3>
+</nav>  
+
+
+<style type="text/css">
+@font-face {
+    font-family: neu;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+@font-face {
+    font-family: thin1;
+    src: url(./NeueHaasDisplayThin.ttf);
+}
+nav{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+    padding: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    
+    }
+
+nav h3{
+        display: none;
+    }
+
+nav .nav-left{
+    position: relative;
+}
+nav .nav-left a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;    
+}
+
+#omprakash{
+    font-size: 1.9em;
+    font-family: thin1;
+}
+#artist{
+    color: white;
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: .1rem;
+    z-index: 99;
+}
+
+#navorangecircle{
+    position: absolute;
+    top: 33px;
+    right: 48px;
+    width: 50px;
+    height: 50px;
+    background-color: #fe330aa4;
+    border-radius: 50px;
+}
+
+
+
+nav .nav-right ul{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    list-style: none;
+   
+    
+}
+nav .nav-right ul li a{
+    z-index: 9;
+    position: relative;
+    text-decoration: none; 
+    color:#fe330a;
+    /* color:white; */
+    
+}
+
+nav .nav-right ul li {
+    position: relative;
+    padding: 10px 20px ;
+    /* border: 1px solid #fe330a; */
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 50px;
+    transition: all ease 0.3s;
+    overflow: hidden;
+    }
+
+nav .nav-right ul li::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #EFE9E3;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+}
+
+nav .nav-right ul li:hover::after{
+    bottom: 0;
+    border-radius: 0;
+    
+}
+
+nav .nav-right ul li:hover a{
+    color: rgb(0, 0, 0);
+    
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+#omprakash{
+    font-size: 1.6em;
+    font-family: thin1;
+}
+#artist{
+    color: white;
+    font-size: 1.7em;
+    font-weight: 900;
+    letter-spacing: .1rem;
+}
+
+#navorangecircle{
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    
+}
+
+.nav-right{
+    display: none;
+}
+
+nav h3{
+        display: block;
+        padding: 2vw 5vw;
+        border: 1px solid rgb(178, 178, 178);
+        border-radius: 50px;
+        color: rgb(255, 255, 255);
+        font-size: 4vw;
+        font-weight: 200 !important;
+    }
+
+}
+</style>

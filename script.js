@@ -1,20 +1,16 @@
-// const scroll = new LocomotiveScroll({
-//     el: document.querySelector('#smooth-scroll'),
-//     smooth: true,
-// });
 var redirectButton = document.getElementById('gallery-page');
 
     // Add click event listener to the button
     redirectButton.addEventListener('click', function() {
       // Redirect to the next page
-      window.location.href = 'http://127.0.0.1:5500/pages/gallery.html'; // Change 'next_page.html' to the URL of the page you want to redirect to
+      window.location.href = 'http://127.0.0.1:5500/pages/gallery.html'; 
     });
 function page2(){
 gsap.to(".f-left-elem", {
         scrollTrigger:{
             trigger: "#f-images",
-            pin:true,
-            start: "top top",
+            pin:true,            
+            start: "top 10%",
             end: "bottom bottom",
             endTrigger: ".last",
             scrub: 1        
@@ -43,4 +39,16 @@ gsap.to(".f-left-elem", {
       });
 
     }
+
 page2();
+
+var menu = document.querySelector("nav h3")
+var full = document.querySelector("#full-scr")
+menu.addEventListener("click", () => {
+    full.style.top = 0;
+});
+
+
+
+
+
