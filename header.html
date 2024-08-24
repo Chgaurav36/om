@@ -6,7 +6,7 @@
         </a>
         <div id="navorangecircle"></div>
     </div>
-    <div class="nav-right">
+    <div id="navbar" class="nav-right">
         <ul>
             <li><a href="/index.html">Home</a></li>
             <li><a href="/pages/sandArt.html">Sand Art</a></li>
@@ -18,6 +18,20 @@
     </div>
     <h3>Menu</h3>
 </nav>  
+
+
+<script>
+    var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+</script>
 
 
 <style type="text/css">
@@ -57,9 +71,10 @@ nav .nav-left a {
 #omprakash{
     font-size: 1.9em;
     font-family: thin1;
+    font-weight: 900;
 }
 #artist{
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 2em;
     font-weight: 900;
     letter-spacing: .1rem;
@@ -72,7 +87,7 @@ nav .nav-left a {
     right: 48px;
     width: 50px;
     height: 50px;
-    background-color: #fe330aa4;
+    background-color: #fe330ae8;
     border-radius: 50px;
 }
 
@@ -83,6 +98,7 @@ nav .nav-right ul{
     align-items: center;
     gap: 2vw;
     list-style: none;
+    
    
     
 }
@@ -90,16 +106,16 @@ nav .nav-right ul li a{
     z-index: 9;
     position: relative;
     text-decoration: none; 
-    color:#fe330a;
-    /* color:white; */
+    color:#ffffff;
     
+
 }
 
 nav .nav-right ul li {
+    font-size: 1.3vw;
     position: relative;
     padding: 10px 20px ;
-    /* border: 1px solid #fe330a; */
-    border: 1px solid rgb(163, 163, 163);
+    background-color: #fe330a;
     border-radius: 50px;
     transition: all ease 0.3s;
     overflow: hidden;
@@ -137,10 +153,7 @@ nav .nav-right ul li:hover a{
 
     nav{
     padding: 8vw 2vw;
-    
-     
-    
-    }
+}
 
 #omprakash{
     font-size: 1.6em;
@@ -174,7 +187,27 @@ nav h3{
         color: rgb(255, 255, 255);
         font-size: 4vw;
         font-weight: 200 !important;
+        cursor: pointer;
     }
 
 }
+
+@media (max-width: 750px) {
+    .nav-right{
+    display: none;
+}
+
+nav h3{
+        display: block;
+        padding: 1vw 3vw;
+        border: 1px solid rgb(178, 178, 178);
+        border-radius: 50px;
+        color: rgb(255, 255, 255);
+        font-size: 3vw;
+        font-weight: 200 !important;
+        cursor: pointer;
+    }
+
+}
+
 </style>
