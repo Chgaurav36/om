@@ -73,6 +73,50 @@ function navbar() {
 navbar();
 
 
+function headerMobile() {
+  gsap.registerPlugin(ScrollTrigger);
+
+const cards  = document.querySelectorAll('.card');
+const header  = document.querySelector('.header');
+const animation = gsap.timeline()
+let cardHeight
+
+
+
+function initCards(){
+  animation.clear()
+  cardHeight = cards[0].offsetHeight
+  console.log("initCards()", cardHeight)
+  cards.forEach((card, index) => {
+    if(index > 0){
+    //increment y value of each card by cardHeight
+      gsap.set(card, {y:index * cardHeight})
+    //animate each card back to 0 (for stacking)
+      animation.to(card, {y:0, duration:index*0.5, ease:"none"},0)
+     
+    }
+  })
+}
+
+initCards()
+
+ScrollTrigger.create({
+  trigger:".wrapper",
+  start:"15% 20%",
+  pin:true,
+  end:()=>`+=${(cards.length * cardHeight) + header.offsetHeight}`,
+  scrub:true,
+  animation:animation,
+  // markers:true,
+  invalidateOnRefresh:true
+})
+
+ScrollTrigger.addEventListener("refreshInit", initCards)
+}
+
+headerMobile();
+
+
 
 
 
