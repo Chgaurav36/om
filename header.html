@@ -1,49 +1,50 @@
 <nav>
-    <div class="nav-left">
-        <a href="/">
-            <h4 id="omprakash" style="color: #fe330a;">Omprakash</h4>
-            <h1 id="artist">Artist</h1>
-        </a>
-        <div id="navorangecircle"></div>
-    </div>
-    <div id="navbar" class="nav-right">
-        <ul>
+  <div class="nav-left">
+    <a href="/">
+      <h4 id="omprakash" style="color: #fe330a">Omprakash</h4>
+      <h1 id="artist">Artist</h1>
+    </a>
+    <div id="navorangecircle"></div>
+  </div>
+  <div id="navbar" class="nav-right">
+    <div id="full-scr">
+      <div id="full-div1">
+        <div class="nav-phone">
+          <ul>
             <li><a href="/index.html">Home</a></li>
             <li><a href="/pages/sandArt.html">Sand Art</a></li>
             <li><a href="/pages/speedArt.html">Speed Art</a></li>
             <li><a href="/pages/magicArt.html">Magic Art</a></li>
             <li><a href="/pages/sparkelArt.html">Sparkel Art</a></li>
-            <li><a href="/pages/contact.html">Contact</a></li>                        
-        </ul>
+            <li><a href="/pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/pages/sandArt.html">Sand Art</a></li>
+      <li><a href="/pages/speedArt.html">Speed Art</a></li>
+      <li><a href="/pages/magicArt.html">Magic Art</a></li>
+      <li><a href="/pages/sparkelArt.html">Sparkel Art</a></li>
+      <li><a href="/pages/contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div id="mobile-menu" onclick="mobile()">
     <h3>Menu</h3>
-</nav>  
-
-
-<!-- <script>
-    var prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("navbar").style.top = "0";
-    } else {
-      document.getElementById("navbar").style.top = "-50px";
-    }
-    prevScrollpos = currentScrollPos;
-  }
-</script> -->
-
+  </div>
+</nav>
 
 <style type="text/css">
-@font-face {
+  @font-face {
     font-family: neu;
     src: url(./NeueHaasDisplayMediu.ttf);
-}
-@font-face {
+  }
+  @font-face {
     font-family: thin1;
     src: url(./NeueHaasDisplayThin.ttf);
-}
-nav{
+  }
+  nav {
     position: fixed;
     z-index: 100;
     width: 100%;
@@ -51,37 +52,40 @@ nav{
     padding: 2vw;
     display: flex;
     justify-content: space-between;
-    align-items: center;  
-    
-    }
+    align-items: center;
+  }
 
-nav h3{
-        display: none;
-    }
+  nav h3 {
+    display: none;
+  }
 
-nav .nav-left{
+  #mobile-menu {
+    display: none;
+  }
+
+  nav .nav-left {
     position: relative;
-}
-nav .nav-left a {
+  }
+  nav .nav-left a {
     display: flex;
     flex-direction: column;
-    text-decoration: none;    
-}
+    text-decoration: none;
+  }
 
-#omprakash{
+  #omprakash {
     font-size: 1.9em;
     font-family: thin1;
     font-weight: 900;
-}
-#artist{
+  }
+  #artist {
     color: rgb(255, 255, 255);
     font-size: 2em;
     font-weight: 900;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     z-index: 99;
-}
+  }
 
-#navorangecircle{
+  #navorangecircle {
     position: absolute;
     top: 33px;
     right: 48px;
@@ -89,39 +93,32 @@ nav .nav-left a {
     height: 50px;
     background-color: #fe330ae8;
     border-radius: 50px;
-}
+  }
 
-
-
-nav .nav-right ul{
+  nav .nav-right ul {
     display: flex;
     align-items: center;
     gap: 2vw;
     list-style: none;
-    
-   
-    
-}
-nav .nav-right ul li a{
+  }
+  nav .nav-right ul li a {
     z-index: 9;
     position: relative;
-    text-decoration: none; 
-    color:#ffffff;
-    
+    text-decoration: none;
+    color: #ffffff;
+  }
 
-}
-
-nav .nav-right ul li {
+  nav .nav-right ul li {
     font-size: 1.3vw;
     position: relative;
-    padding: 10px 20px ;
+    padding: 10px 20px;
     background-color: #fe330a;
     border-radius: 50px;
     transition: all ease 0.3s;
     overflow: hidden;
-    }
+  }
 
-nav .nav-right ul li::after{
+  nav .nav-right ul li::after {
     content: "";
     position: absolute;
     height: 100%;
@@ -131,83 +128,76 @@ nav .nav-right ul li::after{
     bottom: -100%;
     border-radius: 50%;
     transition: all ease 0.3s;
-}
+  }
 
-nav .nav-right ul li:hover::after{
+  nav .nav-right ul li:hover::after {
     bottom: 0;
     border-radius: 0;
-    
-}
+  }
 
-nav .nav-right ul li:hover a{
+  nav .nav-right ul li:hover a {
     color: rgb(255, 255, 255);
-    
-}
+  }
 
-
-
-
-
-
-@media (max-width: 600px) {
-
-    nav{
-    padding: 8vw 2vw;
-}
-
-#omprakash{
-    font-size: 1.6em;
-    font-family: thin1;
-}
-#artist{
-    color: white;
-    font-size: 1.7em;
-    font-weight: 900;
-    letter-spacing: .1rem;
-}
-
-#navorangecircle{
-    position: absolute;
-    top: 22px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    
-}
-
-.nav-right{
-    display: none;
-}
-
-nav h3{
-        display: block;
-        padding: 2vw 5vw;
-        border: 1px solid rgb(178, 178, 178);
-        border-radius: 50px;
-        color: rgb(255, 255, 255);
-        font-size: 4vw;
-        font-weight: 200 !important;
-        cursor: pointer;
+  @media (max-width: 600px) {
+    nav {
+      padding: 8vw 2vw;
     }
 
-}
-
-@media (max-width: 750px) {
-    .nav-right{
-    display: none;
-}
-
-nav h3{
-        display: block;
-        padding: 1vw 3vw;
-        border: 1px solid rgb(178, 178, 178);
-        border-radius: 50px;
-        color: rgb(255, 255, 255);
-        font-size: 3vw;
-        font-weight: 200 !important;
-        cursor: pointer;
+    #omprakash {
+      font-size: 1.6em;
+      font-family: thin1;
+    }
+    #artist {
+      color: white;
+      font-size: 1.7em;
+      font-weight: 900;
+      letter-spacing: 0.1rem;
     }
 
-}
+    #navorangecircle {
+      position: absolute;
+      top: 22px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+    }
 
+    .nav-right {
+      display: none;
+    }
+
+    nav h3 {
+      display: block;
+      padding: 2vw 5vw;
+      border: 1px solid rgb(178, 178, 178);
+      border-radius: 50px;
+      /* color: rgb(255, 255, 255); */
+      color: #fe4b0a !important;
+      font-size: 4vw;
+      font-weight: 200 !important;
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: 750px) {
+    .nav-right {
+      display: none;
+    }
+
+    #mobile-menu {
+      display: block;
+    }
+
+    nav h3 {
+      display: block;
+      padding: 1vw 3vw;
+      border: 1px solid rgb(178, 178, 178);
+      border-radius: 50px;
+      color: rgb(255, 255, 255);
+      font-size: 3vw;
+      font-weight: 200 !important;
+      cursor: pointer;
+    }
+  }
 </style>

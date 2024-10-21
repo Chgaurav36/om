@@ -1,10 +1,4 @@
-var redirectButton = document.getElementById('gallery-page');
 
-    // Add click event listener to the button
-    redirectButton.addEventListener('click', function() {
-      // Redirect to the next page
-      window.location.href = 'http://127.0.0.1:5500/pages/gallery.html'; 
-    });
 function page2(){
 gsap.to(".f-left-elem", {
         scrollTrigger:{
@@ -42,19 +36,19 @@ gsap.to(".f-left-elem", {
 
 page2();
 
-var menu = document.querySelector("nav h3");
-var full = document.querySelector("#full-scr");
-var flag = 0;
-menu.addEventListener("click", function()  {
-
-  if (flag == 0 ) {
-    full.style.top = 0;
-    flag = 1;
-  }else{
-    full.style.top = "-100%";
-    flag = 0;
-  }
-});
+function mobile() {
+  var full = document.querySelector("#full-scr");
+  var flag = 0;
+    console.log("Gaurav");
+    if (flag === 0) {
+      full.style.top = 0;
+      flag = 1;
+    } else {
+      full.style.top = "-100%";
+      flag = 0;
+    }
+  ;
+}
 
 
 function navbar() {
@@ -86,7 +80,6 @@ let cardHeight
 function initCards(){
   animation.clear()
   cardHeight = cards[0].offsetHeight
-  console.log("initCards()", cardHeight)
   cards.forEach((card, index) => {
     if(index > 0){
     //increment y value of each card by cardHeight
