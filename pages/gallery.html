@@ -27,20 +27,35 @@
     />
   </head>
   <body onload="triggerButtonClick()">
+    <div class="main">
+      <div id="full-scr">
+        <div id="full-div1">
+            <div class="nav-phone">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/sandArt.html">Sand Art</a></li>
+                    <li><a href="/pages/speedArt.html">Speed Art</a></li>
+                    <li><a href="/pages/magicArt.html">Magic Art</a></li>
+                    <li><a href="/pages/sparkelArt.html">Sparkel Art</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="header"></div>
     <div class="img-gallery" data-scroll-container>
       <div class="img-gallery-container order" data-scroll>
         <div class="img reorder">
-          <img src="../Slider1.jpg" alt="" />
+          <img src="../Slider1.jpg" alt="" loading="lazy"/>
         </div>
         <div class="img reorder">
-          <img src="../slider2.jpg" alt="" />
+          <img src="../slider2.jpg" alt="" loading="lazy"/>
         </div>
         <div class="img reorder">
-          <img src="../slider3.jpg" alt="" />
+          <img src="../slider3.jpg" alt="" loading="lazy"/>
         </div>
         <div class="img reorder">
-          <img src="../slider4.jpg" alt="" />
+          <img src="../slider4.jpg" alt="" loading="lazy"/>
         </div>
       </div>
     </div>
@@ -48,6 +63,8 @@
       <h1>Gallery</h1>
     </div>
     <div id="btn" class="btn">Explore Gallery</div>
+
+  </div>
     <script>
       $(".header").load("../header.html");
       $(".footer").load("../footer.html");

@@ -4,46 +4,45 @@ lightbox.option({
   disableScrolling: true,
 });
 
-function toggleContent(buttonId) {
-  var content1 = document.getElementById("content1");
-  var content2 = document.getElementById("content2");
 
-  if (buttonId === "button1") {
-    content1.classList.add("active");
-    content2.classList.remove("active");
-  } else if (buttonId === "button2") {
-    content1.classList.remove("active");
-    content2.classList.add("active");
-  }
+
+// function toggleContent(buttonId) {
+//   const content1 = document.getElementById("content1");
+//   const content2 = document.getElementById("content2");
+
+//   // Toggle active class based on buttonId
+//   const isButton1 = buttonId === "button1";
+//   content1.classList.toggle("active", isButton1);
+//   content2.classList.toggle("active", !isButton1);
+// }
+
+function toggleContent(buttonId) {
+  const content1 = document.getElementById("content1");
+  const content2 = document.getElementById("content2");
+  const button1 = document.getElementById("button1");
+  const button2 = document.getElementById("button2");
+
+  // Toggle active class based on buttonId
+  const isButton1 = buttonId === "button1";
+  content1.classList.toggle("active", isButton1);
+  content2.classList.toggle("active", !isButton1);
+
+  // Change button background color
+  button1.style.backgroundColor = isButton1 ? "red" : "";
+  button2.style.backgroundColor = !isButton1 ? "red" : "";
 }
 
-// function mobile() {
-//   var menu = document.querySelector("nav h3");
-//   var full = document.querySelector("#full-scr");
-//   var flag = 0;
-//   menu.addEventListener("click", function () {
-//     console.log("Gaurav");
-//     if (flag == 0) {
-//       full.style.top = 0;
-//       flag = 1;
-//     } else {
-//       full.style.top = "-100%";
-//       flag = 0;
-//     }
-//   });
-// }
+
+
 
 
 function mobile() {
-  var full = document.querySelector("#full-scr");
-  var flag = 0;
-    console.log("Gaurav");
-    if (flag == 0) {
-      full.style.top = 0;
-      flag = 1;
-    } else {
-      full.style.top = "-100%";
-      flag = 0;
-    }
-  ;
+  const full = document.querySelector("#full-scr");
+
+ 
+  if (full.style.top === "0px") {
+    full.style.top = "-110%";
+  } else {
+    full.style.top = "0px";
+  }
 }
