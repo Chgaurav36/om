@@ -118,11 +118,13 @@ img {
 }
 
 .hero h1 {
+    position: absolute;
     width: 100%;
     color: #c0c0c0c0;
     font-size: 30vw;
     font-weight: 400;
     letter-spacing: -0.02em;
+    
 }
 
 .hero p {
@@ -136,10 +138,10 @@ img {
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #000;
+    background: #f02b2b;
     color: #fff;
     font-size: 2vw;
-    border-radius: 30px;
+    border-radius: 50px !important;
     padding: 1em 2em;
     cursor: pointer;
     z-index: 2;
@@ -149,6 +151,8 @@ img {
     width: 100vw;
     padding-top: 100vh;
 }
+
+
 
 .img {
     position: relative;

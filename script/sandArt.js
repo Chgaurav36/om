@@ -1,20 +1,14 @@
 lightbox.option({
   resizeDuration: 200,
+  fadeDuration: 100,
   wrapAround: true,
   disableScrolling: true,
+  showImageNumberLabel: true,
 });
 
 
 
-// function toggleContent(buttonId) {
-//   const content1 = document.getElementById("content1");
-//   const content2 = document.getElementById("content2");
 
-//   // Toggle active class based on buttonId
-//   const isButton1 = buttonId === "button1";
-//   content1.classList.toggle("active", isButton1);
-//   content2.classList.toggle("active", !isButton1);
-// }
 
 function toggleContent(buttonId) {
   const content1 = document.getElementById("content1");
@@ -46,3 +40,20 @@ function mobile() {
     full.style.top = "0px";
   }
 }
+
+
+
+
+// Initialize Lenis
+const lenis = new Lenis({
+  smooth: true,         // Enable smooth scrolling
+  direction: 'vertical' // Scroll direction (horizontal is also possible)
+});
+
+// Animation loop to update Lenis
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
